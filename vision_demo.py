@@ -153,20 +153,50 @@ def find_dates(lis):
     
 
 
+def output_data(fields,values, filename):
+    fout = open(filename,'w+')
+    fout.write('field,value\n')
+
+    for i in range(len(fields)):
+        field = fields[i]
+        value = values[i]
+        fout.write(field+','+value)
+        fout.write('\n')
+
+    fout.close()
+
 
 
 
 def main_call(file):
     path =r'C:\Users\migue\OneDrive\Documents\Python\VisonAPIDemo\advert_invoice.jpg'
     
+    
     lis = detect_text(file)
     address = find_address(lis[0])
     dates = find_dates(lis[0])
-    _name_q =item_names_quant(lis[1])       #retruns two lists 
-    names = _name_q[0]
-    quantities = _name_q[1]
+    names, quantities = item_names_quant(lis[1])
     total = find_total(lis[0])
     inv = find_invoice_num(lis[0])
+    
 
+    #print(address,dates,names,total,inv, quantities)
+    fields = ['Invoice Date', 'Invoice Due Date', 'Invoice ID', 'Address']
+    namefields = ['Item name', 'Quantity'] * len(names)
+
+    for field in namefields:
+        fields.append(field)
+
+    fields.append('Total Amount/Balance Due')
+
+    values = [dates[0],dates[1],inv,address]
+
+    for i in range(len(names)):
+        values.append(names[i])
+        values.append(quantities[i])
+    values.append(str(total))
+
+    print(fields,values)
+    filenam = +str(inv)+'_invoice_output.csv'
+    output_data(fields,values,filenam)
     print(dates,address,inv,names,quantities,total)
-#main_call("apples")

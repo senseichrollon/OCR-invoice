@@ -37,8 +37,8 @@ canvas = Canvas(
     relief = "ridge"
 )
 
-img = PhotoImage(file="googleVSBACK.jpg")
-canvas.create_image(0,0, image = img)
+# img = PhotoImage(file="googleVSBACK.jpg")
+#canvas.create_image(0,0, image = img)
 canvas.place(x = 0, y = 0)
 canvas.create_rectangle(
     0.0,
@@ -55,6 +55,7 @@ def select_file():
     filename = fd.askopenfilename(
         initialdir='/',
         filetypes=filetypes)
+
 
     vision_demo.main_call(filename)
 
