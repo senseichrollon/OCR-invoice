@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tamuhack-testing-1643471102316",
+  "private_key_id": "182acd6f11a1d2eb72fd6c32d122c5d0739db0dd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCye75sC/Nxh724\n2qdjUfOr7SjFfn6zQepcnYA0IE7QRd0Xf/8iHiBE7xpq8GIu/3JxPvt0Hb8zu6qQ\nmyvEGhgvaKsyXEyFVBuPafeYZ61fgjJ4QV9Sic0HNpSlT6+qTo78hq6O4yN6xAbn\nlduG79urNyh6LAOnHI5l8DNIdyIsKUokLhVr1wNzwxERUyRNeaK9f1DwzjuMqfs3\nB6Ctl1BmWFFtthz2EhdI/X21n7AfLzKxSt3XX9GYhxtzfUahmX1749hJqmvaXEAf\nI77vwclMHLn8iixRdxdc+45ZOtXeGg36KHNDDvxaTpaK+ufLaU1IpYm9NyQRQh3j\nAhobtTXjAgMBAAECggEATkzpMh9gEmtZeRI7ot/eBYvKejHPRbbiKPVTvAp8aPRt\nVRTrCb2rrHI05btFZ5bbTwExcTRnoDtxTXU1kxdbitjhWfuR+l/2o0j6vRqmvaKx\nn34WYnBfyQ1R0uANkapbIj+3rqnI89+xo8FjiGQLu6Y8FLTgeVyWv/PLm7vf+vz6\noBfle/YXqaZQmHZtYaq8h2uPi2yY6TCgIcc0XD5ZKezBfULv1fKZdYD8vhw8b8jj\nc2dpgCa7IBQ7Z5M4Of9z3Knb0wu2NF9T8VsYteExk8Bu7u/50Tft7wTDlysR7ozJ\nKwCpStymTn+104N02mpjqmVq6Oy9DZFGXu3uEZV6+QKBgQDYR0hlhCfBdHoMll1F\n/Lq2eUKAT9bq7Sw7lyZFJw+GzZga6kqwHru/+jk6oTkeKKnPysxojA/Y+DqtAlKf\n3JBRA9BJSvbxLwAb55FDq6rjyn4M0VvzLqculW3VqzBQa0XIeQPpOyFxTANFabLP\n/rHTv0Hcri4TvqKgbeobfH5x3wKBgQDTQ3VLk1ltHOQvnQt9Isp/FXa+tIARrqiu\nUgU4xOEL/d2lYJwlrl2solhKGqbH/hPia+CwOZmmT13X6X/Gm8uRYun7NOCcjGnl\nOUyaHmG2jALAcU9AHXH89yX741yLXT1JyghfgnBngnTFbrw+LV4s6RJIDqNKchGz\n5RYG3xPkfQKBgQDQuXqU/kWf3dkr7LF3qcBH+h7D1kmD0ACwQd8dPeUuI5x33UTX\nU9G+JK62doG5KWU4tG8xNnrU2jtGXMeAoExm41dQZJiNit6AD6uRs0rpK7Mai7JB\nrvSJcIzfeKbX9a8TGjc8D2TnAoTlqGx5b0QPJrVZVIADbidkzK7yd+NP4QKBgQCM\nmx8b96vTBSGR1vHojRk8z6pCbpu2KQq3SnuTNuWZN5MnGE+UfKJ33WzplSdff+j4\nD1hxsURj/fq1UwDpzJMF5lFYEe9UAdgQ6bvj70iVWEYUktVuFKri9BLhvIbBcoLx\n83bzKjtpiNfy9ypuL3+4YD78mlFvoM/LbTLly97PeQKBgALn4cKC3tEP/oLcL8Ro\nVWjbtrhBiaPNLlZmf4JGeFm6Qfmi01vxRWfxHEwfqvs9t6roAKjglOwwIx5Eaqe0\nynEpHlggj6eB8nqoyktKh9qkoekydfcVupSKveNgq4L3qEOY7Z8STiJSBsNB4qc2\neVfOfJUK76A5v0BFpSipY4z5\n-----END PRIVATE KEY-----\n",
+  "client_email": "starting-account-wo6c5h1qho2s@tamuhack-testing-1643471102316.iam.gserviceaccount.com",
+  "client_id": "105909267873906868773",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starting-account-wo6c5h1qho2s%40tamuhack-testing-1643471102316.iam.gserviceaccount.com"
+}
