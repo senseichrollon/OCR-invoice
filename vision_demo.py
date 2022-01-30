@@ -113,18 +113,6 @@ def item_names_quant(lis):## call the second list list[1]
             
                     
     return items,quantity
-
-
-def find_dates(lis):
-    months=['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] 
-    ret = []
-
-    for i in range(len(lis)):
-        s = lis[i]
-        if s in months:
-            str = lis[i-1] + ' '+ s + ' ' + lis[i+1]
-            ret.append(str)
-
         
 def is_int(s):
     try:
@@ -141,16 +129,44 @@ def is_float(s):
     except:
         return False
 
+def find_dates(lis):
+    months=['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] 
+    ret = []
+
+   # for i in range(len(lis)):
+
+        # if(is_int(lis[i])):
+        #     year_guess = int(lis[i])
+        #     if((year_guess > 2000) & (year_guess <2023)):
+        #         str =  lis[i-2] + ' '+  lis[i-1] + ' ' + lis[i]
+        #         ret.append(str)
+   # return ret
 
 
-lis = detect_text('advert_invoice.jpg')
-address = find_address(lis[0])
-dates = find_dates(lis[0])
-_name_q =item_names_quant(lis[1])       #retruns two lists 
-names = _name_q[0]
-quantities = _name_q[1]
-total = find_total(lis[0])
-inv = find_invoice_num(lis[0])
+    for i in range(len(lis)):
+        s = lis[i]
+        if s in months:
+            str = lis[i-1] + ' '+ s + ' ' + lis[i+1]
+            ret.append(str)
 
-print(dates,inv,address,names,quantities,total)
+    return ret
+    
 
+
+
+
+
+def main_call(file):
+    path =r'C:\Users\migue\OneDrive\Documents\Python\VisonAPIDemo\advert_invoice.jpg'
+    
+    lis = detect_text(file)
+    address = find_address(lis[0])
+    dates = find_dates(lis[0])
+    _name_q =item_names_quant(lis[1])       #retruns two lists 
+    names = _name_q[0]
+    quantities = _name_q[1]
+    total = find_total(lis[0])
+    inv = find_invoice_num(lis[0])
+
+    print(dates,address,inv,names,quantities,total)
+#main_call("apples")
